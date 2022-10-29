@@ -228,9 +228,6 @@ async def slash4(interaction: discord.Interaction):
     em.add_field(name=f"**Prediction: {prediction}x**", value=f"Average: {int(average)}\nSafe Bet: {safe}")
     await interaction.response.send_message(embed=em)
 
-
-
-
 keep_alive()
-TOKEN = "MTAzNTUwOTI5NTI3OTc3MTY4OA.Gmpdcw.0ozdDxn1eH56jMxqd1M3uenCSra2DZVehvCOq8"
+TOKEN = os.environ['TOKEN']
 client.run(TOKEN)
